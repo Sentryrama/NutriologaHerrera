@@ -1,10 +1,4 @@
-<img src="src/assets/images/html-css-js-v2.png" alt="HTML, CSS and JS logos" style="display: block;
-  margin: 0 auto;
-  max-height: 150px;
-  width: auto;
-  height: auto;">
-
-# App Name
+# Nutriologa Herrera Landing Page
 
 A simple single-page web application built with HTML, CSS, and JavaScript.
 

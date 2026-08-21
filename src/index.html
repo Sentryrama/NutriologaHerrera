@@ -1,12 +1,153 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Nutricionista profesional especializada en bienestar integral, planes alimenticios personalizados y cambio de hábitos saludables."
+    />
     <link rel="stylesheet" href="css/global.css" />
-    <title>Document</title>
+    <title>Yessica Yanet Herrera Jiménez | Nutricionista</title>
   </head>
   <body>
-    <h1>Harold Camacho Herrera</h1>
+    <header class="header" id="header">
+      <strong>Yessica Yanet Herrera Jiménez</strong>
+      <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#sobre-mi">Sobre Mí</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </header>
+
+    <main>
+      <section>
+        <div class="hero__content">
+          <p class="hero__greeting">Hola, soy Yessica</p>
+          <h1 class="hero__title">Nutrición integral para tu bienestar.</h1>
+          <p>
+            Te ayudo a construir una relación sana con la comida a través de
+            planes personalizados y basados en evidencia científica.
+          </p>
+          <a href="#contacto">Agenda tu consulta</a>
+        </div>
+      </section>
+
+      <section id="sobre-mi">
+        <h2>Sobre Mí</h2>
+        <p>
+          Soy nutricionista colegiada con más de 8 años de experiencia
+          acompañando a personas en su camino hacia una vida más saludable. Mi
+          enfoque se basa en la nutrición basada en evidencia, sin dietas
+          restrictivas ni soluciones mágicas.
+        </p>
+        <p>
+          Creo que cada persona es única, por eso diseño planes alimenticios
+          adaptados a tu estilo de vida, gustos y objetivos. Mi misión es que
+          aprendas a alimentarte bien sin perder el placer de comer.
+        </p>
+        <h3>Credenciales</h3>
+        <ul>
+          <li>Licenciada en Nutrición Humana — UAM Xochimilco</li>
+          <li>Diplomado __________</li>
+          <li>Certificación __________</li>
+        </ul>
+      </section>
+
+      <section id="servicios">
+        <h2>Mis Servicios</h2>
+        <p>
+          Ofrezco diferentes opciones para que elijas la que mejor se adapte a
+          tus necesidades.
+        </p>
+        <article>
+          <div>🍎</div>
+          <h3>Consulta Inicial</h3>
+          <p>
+            Evaluación completa de tu estado nutricional, hábitos alimenticios y
+            objetivos. Incluye plan personalizado.
+          </p>
+          <span>$800 MXN</span>
+        </article>
+        <hr />
+        <article>
+          <div>Popular</div>
+          <div>🥗</div>
+          <h3>Plan Mensual</h3>
+          <p>
+            Seguimiento semanal, ajuste de planes, recetario personalizado y
+            acceso directo por WhatsApp.
+          </p>
+          <span>$2,400 MXN</span>
+        </article>
+        <hr />
+        <article>
+          <div>🥑</div>
+          <h3>Reeducación Alimentaria</h3>
+          <p>
+            Programa de 3 meses para transformar tus hábitos de forma gradual y
+            sostenible.
+          </p>
+          <span>$5,500 MXN</span>
+        </article>
+      </section>
+
+      <section id="contacto">
+        <div class="contact__info">
+          <h2 class="section-title">Contacto</h2>
+          <p class="contact__text">
+            ¿Tienes preguntas o quieres agendar una consulta? Escríbeme y te
+            responderé lo antes posible.
+          </p>
+          <span>📍</span>
+          <span>Ciudad de México, CDMX</span>
+          <span>🕐</span>
+          <span>Lunes a Viernes: 9:00 — 20:00</span>
+          <a href="https://wa.me/525539355423" target="_blank" rel="noopener">
+            <span>💬</span> Escríbeme por WhatsApp
+          </a>
+        </div>
+        <form name="contact_form">
+          <label for="name">Nombre</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Tu nombre completo"
+            required
+          />
+
+          <label for="email">Correo electrónico</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="tu@email.com"
+            required
+          />
+
+          <label for="message">Mensaje</label>
+          <textarea
+            id="message"
+            name="message"
+            placeholder="Cuéntame en qué puedo ayudarte..."
+            rows="5"
+            required
+          ></textarea>
+          <button type="submit">Enviar mensaje</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        &copy; 2026 Yessica Yanet Herrera Jiménez — Nutricionista Dietista.
+        Todos los derechos reservados.
+      </p>
+      <a href="#">📷 Instagram</a>
+      <a href="#">📘 Facebook</a>
+      <a href="#">✉️ Email</a>
+    </footer>
   </body>
 </html>
