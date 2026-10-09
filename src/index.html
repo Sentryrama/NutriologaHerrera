@@ -14,7 +14,6 @@
     />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="css/global.css" />
-    <link rel="stylesheet" href="css/index.css" />
     <title>Yessica Yanet Herrera Jiménez | Nutricionista</title>
   </head>
   <body>
@@ -23,18 +22,31 @@
       class="sticky top-0 z-50 bg-base-100/90 backdrop-blur shadow-sm"
     >
       <div class="navbar max-w-5xl mx-auto px-4 sm:px-6">
-        <div class="navbar-start">
+        <div class="navbar-start gap-3">
+          <div class="avatar avatar-placeholder">
+            <div class="bg-secondary text-secondary-content rounded-full w-10">
+              <span class="text-lg font-bold">YH</span>
+            </div>
+          </div>
           <a href="#" class="text-xl font-bold tracking-tight"
             >Nutriologa Herrera</a
           >
         </div>
-        <nav class="navbar-end">
-          <ul class="menu menu-horizontal px-1 hidden sm:flex">
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
             <li><a href="#sobre-mi">Sobre Mí</a></li>
             <li><a href="#servicios">Servicios</a></li>
-            <li><a href="#contacto">Contacto</a></li>
+            <li><a href="#modalidades">Modalidades</a></li>
+            <li><a href="#testimonios">Testimonios</a></li>
           </ul>
-          <details class="dropdown dropdown-end sm:hidden">
+        </div>
+        <div class="navbar-end gap-2">
+          <a
+            href="#contacto"
+            class="btn btn-secondary btn-sm hidden sm:inline-flex"
+            >Agenda tu consulta</a
+          >
+          <details class="dropdown dropdown-end lg:hidden">
             <summary class="btn btn-ghost btn-square" aria-label="Abrir menú">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -56,21 +68,25 @@
             >
               <li><a href="#sobre-mi">Sobre Mí</a></li>
               <li><a href="#servicios">Servicios</a></li>
+              <li><a href="#modalidades">Modalidades</a></li>
+              <li><a href="#testimonios">Testimonios</a></li>
               <li><a href="#contacto">Contacto</a></li>
             </ul>
           </details>
-        </nav>
+        </div>
       </div>
     </header>
 
     <main>
-      <section
-        class="hero bg-[linear-gradient(to_bottom_right,#e9f5ec,#b7e4c7)]"
-      >
+      <!-- Hero -->
+      <section class="hero bg-base-200">
         <div
           class="hero-content max-w-5xl mx-auto px-4 sm:px-6 py-16 sm:py-24 flex-col lg:flex-row gap-8 lg:gap-12"
         >
-          <div class="max-w-2xl text-left">
+          <div class="max-w-2xl">
+            <span class="badge badge-soft badge-secondary mb-4"
+              >Nutrición basada en evidencia</span
+            >
             <h1
               class="font-display text-4xl sm:text-5xl lg:text-6xl font-bold leading-[1.05]"
             >
@@ -83,15 +99,56 @@
               hipertensión — con planes personalizados, sin juicios ni
               restricciones extremas, y con evidencia científica.
             </p>
-            <a href="#contacto" class="btn btn-primary btn-lg"
-              >Agenda tu consulta</a
-            >
+            <div class="flex flex-wrap gap-3">
+              <a href="#contacto" class="btn btn-primary btn-lg"
+                >Agenda tu consulta</a
+              >
+              <a href="#servicios" class="btn btn-ghost btn-lg"
+                >Conocer servicios</a
+              >
+            </div>
+            <div class="flex items-center gap-4 pt-8">
+              <div class="avatar-group -space-x-4">
+                <div class="avatar">
+                  <div class="w-10">
+                    <img
+                      src="https://picsum.photos/80/80?random=1"
+                      alt="Paciente"
+                    />
+                  </div>
+                </div>
+                <div class="avatar">
+                  <div class="w-10">
+                    <img
+                      src="https://picsum.photos/80/80?random=2"
+                      alt="Paciente"
+                    />
+                  </div>
+                </div>
+                <div class="avatar">
+                  <div class="w-10">
+                    <img
+                      src="https://picsum.photos/80/80?random=3"
+                      alt="Paciente"
+                    />
+                  </div>
+                </div>
+                <div class="avatar avatar-placeholder">
+                  <div class="bg-neutral text-neutral-content w-10">
+                    <span>+500</span>
+                  </div>
+                </div>
+              </div>
+              <p class="text-sm text-base-content/70">
+                Más de 500 pacientes acompañados
+              </p>
+            </div>
           </div>
           <figure
-            class="w-full max-w-sm aspect-[4/5] rounded-t-full rounded-b-3xl overflow-hidden shadow-md"
+            class="w-full max-w-sm aspect-[4/5] rounded-box overflow-hidden shadow-md"
           >
             <img
-              src="https://picsum.photos/600/600"
+              src="https://picsum.photos/600/750"
               alt="Alimentación saludable"
               class="h-full w-full object-cover"
               loading="lazy"
@@ -100,54 +157,85 @@
         </div>
       </section>
 
-      <section id="sobre-mi" class="bg-white">
-        <div
-          class="max-w-5xl mx-auto px-4 sm:px-6 py-16 sm:py-20 grid gap-10 lg:grid-cols-5 lg:gap-12"
-        >
-          <div class="lg:col-span-3">
-            <h2 class="font-display text-3xl sm:text-4xl font-bold">Sobre Mí</h2>
-            <p class="pt-4 text-base-content/70 max-w-[60ch]">
-              Soy nutricionista colegiada con más de 8 años de experiencia
-              acompañando a personas en su camino hacia una vida más
-              saludable. Mi enfoque se basa en la nutrición basada en
-              evidencia, sin dietas restrictivas ni soluciones mágicas.
-            </p>
-            <p class="pt-4 text-base-content/70 max-w-[60ch]">
-              Creo que cada persona es única, por eso diseño planes
-              alimenticios adaptados a tu estilo de vida, gustos y objetivos.
-              Mi misión es que aprendas a alimentarte bien sin perder el
-              placer de comer.
-            </p>
-          </div>
-          <aside class="lg:col-span-2">
-            <div class="bg-base-200/60 rounded-3xl p-6 sm:p-8">
-              <h3 class="font-display text-xl font-bold">Credenciales</h3>
-              <ul class="list pt-4">
-                <li class="list-row items-center gap-3">
-                  <span aria-hidden="true">🎓</span>
-                  <span>Licenciada en Nutrición Humana — UAM Xochimilco</span>
-                </li>
-                <li class="list-row items-center gap-3">
-                  <span aria-hidden="true">📜</span>
-                  <span>Diplomado __________</span>
-                </li>
-                <li class="list-row items-center gap-3">
-                  <span aria-hidden="true">✅</span>
-                  <span>Certificación __________</span>
-                </li>
-              </ul>
+      <!-- Sobre mí -->
+      <section id="sobre-mi" class="bg-base-100">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 py-16 sm:py-20">
+          <span class="badge badge-soft">Sobre mí</span>
+          <div class="grid gap-10 lg:grid-cols-5 lg:gap-12 pt-4">
+            <div class="lg:col-span-3">
+              <h2 class="font-display text-3xl sm:text-4xl font-bold">
+                Acompañamiento humano, sin restricciones extremas
+              </h2>
+              <p class="pt-4 text-base-content/70 max-w-[60ch]">
+                Soy nutricionista colegiada con más de 8 años de experiencia
+                acompañando a personas en su camino hacia una vida más
+                saludable. Mi enfoque se basa en la nutrición basada en
+                evidencia, sin dietas restrictivas ni soluciones mágicas.
+              </p>
+              <p class="pt-4 text-base-content/70 max-w-[60ch]">
+                Creo que cada persona es única, por eso diseño planes
+                alimenticios adaptados a tu estilo de vida, gustos y objetivos.
+                Mi misión es que aprendas a alimentarte bien sin perder el
+                placer de comer.
+              </p>
+              <div class="stats stats-vertical sm:stats-horizontal shadow mt-8">
+                <div class="stat">
+                  <div class="stat-title">Experiencia</div>
+                  <div class="stat-value">8+ años</div>
+                  <div class="stat-desc">Práctica clínica</div>
+                </div>
+                <div class="stat">
+                  <div class="stat-title">Pacientes</div>
+                  <div class="stat-value">500+</div>
+                  <div class="stat-desc">Planes personalizados</div>
+                </div>
+                <div class="stat">
+                  <div class="stat-title">Enfoque</div>
+                  <div class="stat-value">100%</div>
+                  <div class="stat-desc">Basado en evidencia</div>
+                </div>
+              </div>
             </div>
-          </aside>
+            <div class="lg:col-span-2">
+              <div class="card bg-base-200 card-border">
+                <div class="card-body">
+                  <h3 class="card-title">Credenciales</h3>
+                  <ul class="list pt-2">
+                    <li class="list-row items-center gap-3">
+                      <span aria-hidden="true">🎓</span>
+                      <span
+                        >Licenciada en Nutrición Humana — UAM Xochimilco</span
+                      >
+                    </li>
+                    <li class="list-row items-center gap-3">
+                      <span aria-hidden="true">📜</span>
+                      <span>Diplomado __________</span>
+                    </li>
+                    <li class="list-row items-center gap-3">
+                      <span aria-hidden="true">✅</span>
+                      <span>Certificación __________</span>
+                    </li>
+                  </ul>
+                  <div class="divider my-2">Áreas</div>
+                  <div class="flex flex-wrap gap-2">
+                    <span class="badge badge-outline">Vegano</span>
+                    <span class="badge badge-outline">Deportivo</span>
+                    <span class="badge badge-outline">Diabetes</span>
+                    <span class="badge badge-outline">Sin gluten</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
-      <section
-        id="servicios"
-        class="bg-[linear-gradient(to_bottom_right,#e9f5ec,#b7e4c7)]"
-      >
+      <!-- Servicios -->
+      <section id="servicios" class="bg-base-200">
         <div class="max-w-5xl mx-auto px-4 sm:px-6 py-16 sm:py-20">
           <div class="max-w-2xl">
-            <h2 class="font-display text-3xl sm:text-4xl font-bold">
+            <span class="badge badge-soft badge-secondary">Servicios</span>
+            <h2 class="font-display text-3xl sm:text-4xl font-bold pt-4">
               Mis Servicios
             </h2>
             <p class="py-4 text-base-content/70 max-w-[60ch]">
@@ -156,9 +244,7 @@
             </p>
           </div>
           <div class="grid gap-6 md:grid-cols-12 pt-6 items-stretch">
-            <article
-              class="card bg-base-100 card-border shadow-sm md:col-span-4"
-            >
+            <article class="card bg-base-100 card-border shadow-sm md:col-span-4">
               <div class="card-body gap-3">
                 <div class="text-4xl" aria-hidden="true">🍎</div>
                 <h3 class="card-title">Consulta Inicial</h3>
@@ -166,14 +252,17 @@
                   Evaluación completa de tu estado nutricional, hábitos
                   alimenticios y objetivos. Incluye plan personalizado.
                 </p>
-                <div class="card-actions pt-2">
+                <div class="card-actions pt-2 items-center justify-between">
                   <span class="badge badge-soft">$800 MXN</span>
+                  <a href="#contacto" class="btn btn-ghost btn-sm"
+                    >Agendar</a
+                  >
                 </div>
               </div>
             </article>
 
             <article
-              class="card bg-base-100 card-border border-2 border-primary shadow-md md:col-span-8"
+              class="card bg-base-100 card-border border-secondary shadow-md md:col-span-8"
             >
               <div class="card-body gap-3">
                 <div class="flex items-center justify-between">
@@ -185,14 +274,17 @@
                   Seguimiento semanal, ajuste de planes, recetario personalizado
                   y acceso directo por WhatsApp.
                 </p>
-                <div class="card-actions pt-2">
+                <div class="card-actions pt-2 items-center justify-between">
                   <span class="badge badge-soft">$2,400 MXN</span>
+                  <a href="#contacto" class="btn btn-secondary btn-sm"
+                    >Empezar ahora</a
+                  >
                 </div>
               </div>
             </article>
 
             <article
-              class="card bg-base-100 card-border shadow-sm md:col-span-12"
+              class="card bg-base-100 card-border shadow-sm md:col-span-12 lg:card-side"
             >
               <div class="card-body gap-3">
                 <div class="text-4xl" aria-hidden="true">🥑</div>
@@ -201,19 +293,35 @@
                   Programa de 3 meses para transformar tus hábitos de forma
                   gradual y sostenible.
                 </p>
-                <div class="card-actions pt-2">
+                <div class="card-actions pt-2 items-center justify-between">
                   <span class="badge badge-soft">$5,500 MXN</span>
+                  <a href="#contacto" class="btn btn-outline btn-sm"
+                    >Más información</a
+                  >
                 </div>
               </div>
             </article>
           </div>
+          <div class="card bg-base-100 card-border mt-6">
+            <div class="card-body">
+              <h3 class="card-title">¿Cómo funciona?</h3>
+              <ul class="steps steps-vertical sm:steps-horizontal w-full pt-2">
+                <li class="step step-secondary">Agenda tu consulta</li>
+                <li class="step step-secondary">Evaluación inicial</li>
+                <li class="step">Plan personalizado</li>
+                <li class="step">Seguimiento</li>
+              </ul>
+            </div>
+          </div>
         </div>
       </section>
 
-      <section id="modalidades" class="bg-white">
+      <!-- Modalidades -->
+      <section id="modalidades" class="bg-base-100">
         <div class="max-w-5xl mx-auto px-4 sm:px-6 py-16 sm:py-20">
           <div class="max-w-2xl">
-            <h2 class="font-display text-3xl sm:text-4xl font-bold">
+            <span class="badge badge-soft">Modalidades</span>
+            <h2 class="font-display text-3xl sm:text-4xl font-bold pt-4">
               Modalidades de consulta
             </h2>
             <p class="py-4 text-base-content/70 max-w-[60ch]">
@@ -222,7 +330,7 @@
             </p>
           </div>
           <div class="grid gap-6 md:grid-cols-2 pt-6">
-            <article class="card bg-base-100 card-border shadow-sm">
+            <article class="card bg-base-200 card-border">
               <div class="card-body gap-3">
                 <div class="text-4xl" aria-hidden="true">📍</div>
                 <h3 class="card-title">Presencial</h3>
@@ -231,12 +339,16 @@
                   México. Ideal si prefieres evaluación antropométrica directa
                   y trato cara a cara.
                 </p>
-                <div class="card-actions pt-2">
-                  <span class="badge badge-soft">Lunes a viernes, 9:00–20:00</span>
+                <div class="divider my-1"></div>
+                <div class="card-actions items-center justify-between">
+                  <span class="badge badge-soft"
+                    >Lunes a viernes, 9:00–20:00</span
+                  >
+                  <a href="#contacto" class="btn btn-ghost btn-sm">Agendar</a>
                 </div>
               </div>
             </article>
-            <article class="card bg-base-100 card-border shadow-sm">
+            <article class="card bg-base-200 card-border">
               <div class="card-body gap-3">
                 <div class="text-4xl" aria-hidden="true">💻</div>
                 <h3 class="card-title">En línea por videollamada</h3>
@@ -247,8 +359,12 @@
                   En ciertos planes se te proporciona báscula y cinta métrica
                   para tu seguimiento en casa.
                 </p>
-                <div class="card-actions pt-2">
-                  <span class="badge badge-soft">Disponible en todo México</span>
+                <div class="divider my-1"></div>
+                <div class="card-actions items-center justify-between">
+                  <span class="badge badge-soft"
+                    >Disponible en todo México</span
+                  >
+                  <a href="#contacto" class="btn btn-ghost btn-sm">Agendar</a>
                 </div>
               </div>
             </article>
@@ -256,13 +372,12 @@
         </div>
       </section>
 
-      <section
-        id="testimonios"
-        class="bg-[linear-gradient(to_bottom_right,#e9f5ec,#b7e4c7)]"
-      >
+      <!-- Testimonios -->
+      <section id="testimonios" class="bg-base-200">
         <div class="max-w-5xl mx-auto px-4 sm:px-6 py-16 sm:py-20">
           <div class="max-w-2xl">
-            <h2 class="font-display text-3xl sm:text-4xl font-bold">
+            <span class="badge badge-soft badge-secondary">Testimonios</span>
+            <h2 class="font-display text-3xl sm:text-4xl font-bold pt-4">
               Lo que dicen mis pacientes
             </h2>
             <p class="py-4 text-base-content/70 max-w-[60ch]">
@@ -273,12 +388,12 @@
             <figure class="card bg-base-100 card-border shadow-sm">
               <div class="card-body gap-3">
                 <div class="rating rating-sm" aria-label="5 de 5 estrellas">
-                  <div class="mask mask-star bg-accent" aria-label="1 estrella"></div>
-                  <div class="mask mask-star bg-accent" aria-label="2 estrellas"></div>
-                  <div class="mask mask-star bg-accent" aria-label="3 estrellas"></div>
-                  <div class="mask mask-star bg-accent" aria-label="4 estrellas"></div>
+                  <div class="mask mask-star bg-warning" aria-label="1 estrella"></div>
+                  <div class="mask mask-star bg-warning" aria-label="2 estrellas"></div>
+                  <div class="mask mask-star bg-warning" aria-label="3 estrellas"></div>
+                  <div class="mask mask-star bg-warning" aria-label="4 estrellas"></div>
                   <div
-                    class="mask mask-star bg-accent"
+                    class="mask mask-star bg-warning"
                     aria-label="5 estrellas"
                     aria-current="true"
                   ></div>
@@ -287,20 +402,31 @@
                   “Por fin entendí cómo comer sin culpa. El plan se adaptó a
                   mis horarios y a la comida que me gusta.”
                 </blockquote>
-                <figcaption class="text-sm text-base-content/60">
-                  — María G., Plan Mensual
+                <div class="divider my-1"></div>
+                <figcaption class="flex items-center gap-3">
+                  <div class="avatar">
+                    <div class="w-10 rounded-full">
+                      <img
+                        src="https://picsum.photos/80/80?random=11"
+                        alt="Foto de María G."
+                      />
+                    </div>
+                  </div>
+                  <span class="text-sm text-base-content/60">
+                    María G. — Plan Mensual
+                  </span>
                 </figcaption>
               </div>
             </figure>
             <figure class="card bg-base-100 card-border shadow-sm">
               <div class="card-body gap-3">
                 <div class="rating rating-sm" aria-label="5 de 5 estrellas">
-                  <div class="mask mask-star bg-accent" aria-label="1 estrella"></div>
-                  <div class="mask mask-star bg-accent" aria-label="2 estrellas"></div>
-                  <div class="mask mask-star bg-accent" aria-label="3 estrellas"></div>
-                  <div class="mask mask-star bg-accent" aria-label="4 estrellas"></div>
+                  <div class="mask mask-star bg-warning" aria-label="1 estrella"></div>
+                  <div class="mask mask-star bg-warning" aria-label="2 estrellas"></div>
+                  <div class="mask mask-star bg-warning" aria-label="3 estrellas"></div>
+                  <div class="mask mask-star bg-warning" aria-label="4 estrellas"></div>
                   <div
-                    class="mask mask-star bg-accent"
+                    class="mask mask-star bg-warning"
                     aria-label="5 estrellas"
                     aria-current="true"
                   ></div>
@@ -309,20 +435,31 @@
                   “Tomé la consulta en línea y me enviaron báscula y cinta
                   métrica. El seguimiento por WhatsApp me mantuvo constante.”
                 </blockquote>
-                <figcaption class="text-sm text-base-content/60">
-                  — Jorge R., Reeducación Alimentaria
+                <div class="divider my-1"></div>
+                <figcaption class="flex items-center gap-3">
+                  <div class="avatar">
+                    <div class="w-10 rounded-full">
+                      <img
+                        src="https://picsum.photos/80/80?random=12"
+                        alt="Foto de Jorge R."
+                      />
+                    </div>
+                  </div>
+                  <span class="text-sm text-base-content/60">
+                    Jorge R. — Reeducación Alimentaria
+                  </span>
                 </figcaption>
               </div>
             </figure>
             <figure class="card bg-base-100 card-border shadow-sm">
               <div class="card-body gap-3">
                 <div class="rating rating-sm" aria-label="5 de 5 estrellas">
-                  <div class="mask mask-star bg-accent" aria-label="1 estrella"></div>
-                  <div class="mask mask-star bg-accent" aria-label="2 estrellas"></div>
-                  <div class="mask mask-star bg-accent" aria-label="3 estrellas"></div>
-                  <div class="mask mask-star bg-accent" aria-label="4 estrellas"></div>
+                  <div class="mask mask-star bg-warning" aria-label="1 estrella"></div>
+                  <div class="mask mask-star bg-warning" aria-label="2 estrellas"></div>
+                  <div class="mask mask-star bg-warning" aria-label="3 estrellas"></div>
+                  <div class="mask mask-star bg-warning" aria-label="4 estrellas"></div>
                   <div
-                    class="mask mask-star bg-accent"
+                    class="mask mask-star bg-warning"
                     aria-label="5 estrellas"
                     aria-current="true"
                   ></div>
@@ -331,8 +468,19 @@
                   “Como vegetariana me costaba balancear mis comidas. Ahora
                   tengo un plan completo y sin pasar hambre.”
                 </blockquote>
-                <figcaption class="text-sm text-base-content/60">
-                  — Ana P., Consulta Inicial
+                <div class="divider my-1"></div>
+                <figcaption class="flex items-center gap-3">
+                  <div class="avatar">
+                    <div class="w-10 rounded-full">
+                      <img
+                        src="https://picsum.photos/80/80?random=13"
+                        alt="Foto de Ana P."
+                      />
+                    </div>
+                  </div>
+                  <span class="text-sm text-base-content/60">
+                    Ana P. — Consulta Inicial
+                  </span>
                 </figcaption>
               </div>
             </figure>
@@ -340,17 +488,19 @@
         </div>
       </section>
 
-      <section id="contacto" class="bg-white">
+      <!-- Contacto -->
+      <section id="contacto" class="bg-base-100">
         <div
           class="max-w-5xl mx-auto px-4 sm:px-6 py-16 sm:py-20 grid gap-8 lg:grid-cols-2 lg:gap-12 items-start"
         >
           <div class="flex flex-col gap-4">
+            <span class="badge badge-soft">Contacto</span>
             <h2 class="font-display text-3xl sm:text-4xl font-bold">Contacto</h2>
             <p class="text-base-content/70">
               ¿Tienes preguntas o quieres agendar una consulta? Escríbeme y te
               responderé lo antes posible.
             </p>
-            <ul class="list bg-base-100 rounded-box shadow-sm">
+            <ul class="list bg-base-200 rounded-box shadow-sm">
               <li class="list-row items-center gap-3">
                 <span aria-hidden="true">📍</span>
                 <span>Tulyehualco, Xochimilco, Ciudad de México, CDMX</span>
@@ -364,14 +514,14 @@
               href="https://wa.me/525539355423"
               target="_blank"
               rel="noopener"
-              class="btn btn-primary"
+              class="btn btn-secondary"
             >
               <span aria-hidden="true">💬</span> Escríbeme por WhatsApp
             </a>
           </div>
           <form
             name="contact_form"
-            class="card bg-base-100 card-border shadow-sm"
+            class="card bg-base-200 card-border shadow-sm"
           >
             <fieldset class="fieldset card-body gap-4 p-6 sm:p-8">
               <legend class="fieldset-legend text-lg font-semibold">
@@ -414,7 +564,7 @@
                   class="textarea w-full"
                 ></textarea>
               </div>
-              <button type="submit" class="btn btn-primary btn-block">
+              <button type="submit" class="btn btn-outline btn-block">
                 Enviar mensaje
               </button>
             </fieldset>
@@ -424,8 +574,13 @@
     </main>
 
     <footer
-      class="footer footer-horizontal footer-center bg-[linear-gradient(to_bottom_right,#e9f5ec,#b7e4c7)] text-base-content p-10"
+      class="footer footer-horizontal footer-center bg-base-200 text-base-content p-10"
     >
+      <div class="avatar avatar-placeholder">
+        <div class="bg-secondary text-secondary-content rounded-full w-12">
+          <span class="text-xl font-bold">YH</span>
+        </div>
+      </div>
       <p class="max-w-2xl">
         &copy; 2026 Yessica Yanet Herrera Jiménez — Nutricionista Dietista.
         Todos los derechos reservados.
