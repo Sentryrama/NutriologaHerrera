@@ -1,43 +1,35 @@
-# Nutriologa Herrera Landing Page
+# Nutrióloga Herrera — Landing Page
 
-A simple single-page web application built with HTML, CSS, and JavaScript.
+Landing page para la nutrióloga Yessica Yanet Herrera Jiménez, enfocada en nutrición integral, planes personalizados y cambio de hábitos saludables.
 
-## Features
+Desarrollada con HTML, CSS y JavaScript, con estilos basados en **daisyUI 5 + Tailwind CSS 4**, y apoyada con **inteligencia artificial** para el diseño de componentes, el tema personalizado y la refactorización del código.
 
-- Fast and lightweight
-- Single-page client-side navigation
+## Secciones
 
+- Hero con llamado a la acción
+- Sobre mí y credenciales
+- Servicios (Consulta Inicial, Plan Mensual, Reeducación Alimentaria)
+- Contacto con formulario y WhatsApp
 
-### Prerequisites
+## Desarrollo
 
-Make sure you have [Node.js](https://nodejs.org/) and [pnpm](https://pnpm.io/) installed.
+### Prerrequisitos
 
+Asegúrate de tener [Node.js](https://nodejs.org/) y [pnpm](https://pnpm.io/) instalados.
 
-### Add server with autoreload
-
-*Option 1: [servor](https://npmx.dev/package/servor) (✅fast, ✅lightweight, ✅no dependencies)*
-
-```bash
-pnpm add servor
-```
-```bash
-pnpx servor src/ index.html 1234 --reload
-```
-
-*Option 2: [live-server](https://npmx.dev/package/live-server)*
+### Servidor local con recarga automática
 
 ```bash
-pnpm add live-sever
-```
-```bash
-pnpx live-server src/ --no-browser --port=1234
+pnpm install
+pnpm run dev
 ```
 
-*Option 3: [vite](https://npmx.dev/package/vite)*
+Esto sirve `src/` con `servor` en `http://localhost:1234`.
+
+### Despliegue
 
 ```bash
-pnpm add vite
+pnpm run deploy
 ```
-```bash
-pnpx vite src/ --port 1234
-```
+
+Publica `src/` en GitHub Pages con `gh-pages`.
